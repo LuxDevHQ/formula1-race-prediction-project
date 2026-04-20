@@ -1,0 +1,16 @@
+project:
+  name: formula1-race-prediction-project
+  season_start: 2021
+  season_end: 2026
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  artifacts: artifacts
+
+database:
+  url: postgresql://postgres:postgres@localhost:5432/f1_analytics
+
+model:
+  random_state: 42
+  test_size: 0.2
